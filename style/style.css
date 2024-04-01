@@ -1,0 +1,30 @@
+.container{
+    display: grid;
+    background-color: blue;
+    padding: 8px;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 50px 200px 50px;
+    grid-template-areas: 
+            "header header"
+            "aside main"
+            "footer footer";
+            gap: 20px;
+}
+
+.item {
+    background-color: aliceblue;
+    border: 2px solid black;
+}
+
+.header{
+    grid-area: header;
+}
+
+.aside {
+    grid-area: aside;
+
+}
+
+.footer{
+    grid-area: footer;
+}
